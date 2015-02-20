@@ -4,14 +4,14 @@ This library wraps the [New Relic Insights](http://newrelic.com/insights) API. N
 ## constructor(accountNumber, apiKey, [platform])
 To create a new Insights object, you will your Account # and your Insights API key. An optional third parameter can be supplied to indicate the platform ('electricimp' will be used if no platform is specified). 
 
-```
+```squirrel
 insights <- NewRelicInsights(accountNumber, apiKey);
 ```
 
 ## insights.sendEvent(eventType, data, [callback])
 The **sendEvent** sends a new event to the Insights engine. If a callback is supplied, the request will be made asyncronously, and the callback will be executed upon completion. If no callback is supplied, the request will be made syncronously, and the method will return an object with two fields: err, and data. Examples of both can be seen below:
 
-```
+```squirrel
 // Asyncronous Request
 device.on("temp", function(data) {
     local insightsData = {
@@ -33,7 +33,7 @@ device.on("temp", function(data) {
 });
 ```
 
-```
+```squirrel
 // Syncronous Request:
 device.on("temp", function(data) {
     local insightData = { 
