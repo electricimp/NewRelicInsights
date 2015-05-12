@@ -2,6 +2,8 @@
 
 This library wraps the [New Relic Insights](http://newrelic.com/insights) API. New Relic Insights allow you to quickly and easily track, analyze and create real time dashboards around event-based data.
 
+**To add this library to your project, add** `#require "NewRelicInsights.class.nut:1.0.0"` **to the top of your agent code**
+
 ## Usage
 
 ### Constructor
